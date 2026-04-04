@@ -1,0 +1,13 @@
+kind: cluster
+metadata:
+  name: sandbox
+nodes:
+  - name: sysnode1
+    role: control-plane
+    image: kindest/node:v1.24.0
+  - name: worker1
+    role: worker
+    image: kindest/node:v1.24.0
+  - name: worker2
+    role: worker
+    image: kindest/node:v1.24.0
